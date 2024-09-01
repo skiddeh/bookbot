@@ -16,8 +16,6 @@ def main():
     chars = CountChars(file_contents)
     sorted_dict = convert_to_list_of_dicts(alphabet_count)
     sorted_dict.sort(reverse=True, key=sort_on)
-
-    
     
     print(f"--- Begin report of books/frankenstein.txt ---\n{number_of_words} found in the document\n\n")
     
@@ -25,11 +23,6 @@ def main():
         char = item['char']
         num = item['num']
         print(f"The '{char}' character was found {num} times")
-
-
-    
-
-    #print(f"{number_of_words} words found in the document")
 
 def GetString(file_contents):
     split_contents = file_contents.split()
